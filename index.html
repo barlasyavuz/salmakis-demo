@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Salmakis Resort & Spa | Demo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a href="#" class="logo" aria-label="Salmakis Resort ana sayfa">
+      <span>SALMAKIS</span>
+      <small>RESORT & SPA · BODRUM</small>
+    </a>
+
+    <nav class="main-nav" aria-label="Ana menü">
+      <a href="#konaklama">Konaklama</a>
+      <a href="#spa">Spa & Wellness</a>
+      <a href="#gastronomi">Gastronomi</a>
+      <a href="#aktiviteler">Aktiviteler</a>
+      <a href="#organizasyon">Organizasyon</a>
+      <a href="#galeri">Galeri</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#rezervasyon" class="reservation-btn">Rezervasyon</a>
+
+      <div class="language" aria-label="Dil seçenekleri">
+        <span>TR</span>
+        <span>EN</span>
+      </div>
+    </div>
+
+<button
+  class="mobile-menu-btn"
+  type="button"
+  aria-label="Menüyü aç"
+  aria-expanded="false"
+  aria-controls="mobile-drawer"
+>
+  <span></span>
+  <span></span>
+</button>
+  </header>
+  <div class="mobile-drawer-overlay" data-menu-close></div>
+
+<aside id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+  <div class="mobile-drawer-head">
+    <a href="#" class="mobile-drawer-logo" data-menu-link>
+      <span>SALMAKİS</span>
+      <small>RESORT & SPA · BODRUM</small>
+    </a>
+
+    <button class="mobile-menu-close" type="button" aria-label="Menüyü kapat" data-menu-close>
+      ×
+    </button>
+  </div>
+
+  <nav class="mobile-drawer-nav" aria-label="Mobil menü">
+    <a href="#konaklama" data-menu-link>Konaklama</a>
+    <a href="#spa" data-menu-link>Spa & Wellness</a>
+    <a href="#gastronomi" data-menu-link>Gastronomi</a>
+    <a href="#aktiviteler" data-menu-link>Aktiviteler</a>
+    <a href="#organizasyon" data-menu-link>Organizasyon</a>
+    <a href="#galeri" data-menu-link>Galeri</a>
+    <a href="#iletisim" data-menu-link>İletişim</a>
+  </nav>
+
+  <a href="#rezervasyon" class="mobile-drawer-reservation" data-menu-link>
+    Rezervasyon Yap
+  </a>
+</aside>
+<main>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="eyebrow">Bodrum · Bardakçı Koyu</p>
+
+      <h1>
+        Bardakçı Koyu’nda<br>
+        bir<br>
+        Bodrum deneyimi.
+      </h1>
+
+      <p class="hero-text">
+        Sabah ışığı denizin üzerinden yükselirken, gün Salmakis’te yavaşça başlar. 
+        Havuzun çevresinde uzayan saatler, akşam manzaraya karşı kurulan sofralar ve kıyıya yakın sakin ritim; Bodrum’u yalnızca görmek için 
+        değil, hissetmek için burada bir araya gelir.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#konaklama" class="btn btn-primary">Konaklamayı Keşfet</a>
+        <a href="#rezervasyon" class="btn btn-secondary">Rezervasyon</a>
+      </div>
+    </div>
+
+    <a href="#hafiza" class="scroll-indicator" aria-label="Aşağı kaydır">
+      ↓
+    </a>
+  </section>
+
+  <section id="hafiza" class="memory-section">
+    <div class="container memory-grid">
+      <div class="memory-image" data-reveal="left">
+        <img
+          class="lazy-img"
+          data-src="./assets/images/experience/salmakis-statue.png"
+          alt="Salmakis heykel detayı"
+          decoding="async"
+        >
+      </div>
+
+      <div class="memory-content" data-reveal-group>
+        <p class="section-kicker">Salmakis’in Hafızası</p>
+
+        <h2>Adını Bodrum’un hafızasından alan bir resort.</h2>
+
+      
+        <p>
+          Bardakçı Koyu’nun eski anlatılarından gelen Salmakis ismi; bugün
+          denize bakan beyaz duvarlarda, taş yüzeylerde ve günün ritmini
+          yavaşlatan avlularda yaşamaya devam eder. Burada hikâye yalnızca
+          geçmişten gelen bir isim değil; mekânın bıraktığı izdir.
+        </p>
+        
+
+        <a href="#deneyim" class="text-link">Hikayemizi Keşfedin</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="deneyim" class="split-section">
+    <div class="container split-grid">
+      <div class="split-content" data-reveal-group>
+        <p class="section-kicker">Resort Deneyimi</p>
+
+        <h2>Denizin etrafında kurulan resort deneyimi.</h2>
+
+        <p>
+          Gün bazen havuz kenarında serin bir gölgede, bazen kıyıya inen birkaç adımda, bazen de akşam ışığının yavaşça suya karıştığı bir manzarada ilerler. 
+          Salmakis’te resort deneyimi, tek bir alanda değil; günün farklı anlarına yayılan küçük geçişlerde hissedilir.
+        </p>
+
+        <a href="#aktiviteler" class="text-link">Tesisi Keşfedin</a>
+      </div>
+
+      <div class="split-image" data-reveal="right">
+        <img
+          class="lazy-img"
+          data-src="./assets/images/hero/hero-salmakis-aerial.png"
+          alt="Salmakis Resort genel görünüm"
+          decoding="async"
+        >
+      </div>
+    </div>
+  </section>
+
+  <section id="konaklama" class="rooms-section">
+    <div class="container rooms-grid">
+      <div class="rooms-content" data-reveal-group>
+        <p class="section-kicker">Konaklama</p>
+
+        <h2>Manzaraya açılan zamansız resort odaları.</h2>
+
+        <p>
+          Perdelerin arasından içeri giren Bodrum ışığı, balkonun ötesinde uzanan deniz ve klasik detaylarla çevrili sakin bir oda… 
+          Salmakis’te konaklama, yalnızca geceyi geçirmek değil; günün ilk ve son anlarını manzarayla paylaşmaktır.
+        </p>
+
+        <a href="#rezervasyon" class="text-link">Odalarımızı Keşfedin</a>
+      </div>
+
+      <div class="rooms-collage">
+        <div class="room-main-image" data-reveal="up">
+          <img
+            class="lazy-img"
+            data-src="./assets/images/rooms/room-main.png"
+            alt="Salmakis oda atmosferi"
+            decoding="async"
+          >
+        </div>
+
+        <div class="room-side-images">
+          <img
+            class="lazy-img"
+            data-reveal="up"
+            data-delay="120"
+            data-src="./assets/images/rooms/room-balcony.png"
+            alt="Salmakis balkon deniz manzarası"
+            decoding="async"
+          >
+
+          <img
+            class="lazy-img"
+            data-reveal="up"
+            data-delay="220"
+            data-src="./assets/images/rooms/room-bathroom.png"
+            alt="Salmakis banyo detayı"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section">
+  <div class="features-mobile-intro">
+    <p class="section-kicker">Deneyim Alanları</p>
+    <h2>Salmakis’te günün farklı ritimleri.</h2>
+    <p>
+      Spa’dan gastronomiye, aktivitelerden özel buluşmalara; her alan
+      Bodrum’un denizle kurduğu sakin atmosferi tamamlar.
+    </p>
+  </div>
+
+  <div class="container features-grid">
+
+    <article id="spa" class="feature-card" data-reveal="up">
+      <div class="feature-icon">
+        <span>✦</span>
+      </div>
+
+      <p class="feature-kicker">Spa & Wellness</p>
+
+      <h3>Bodrum’un hareketinden sonra gelen sakinlik.</h3>
+
+      <p class="feature-desktop-copy">
+        Hamamdan masaj ritüellerine, bakım alanlarından fitness deneyimine;
+        Salmakis’te beden, günün yoğunluğundan sonra yeniden sakinleşir.
+      </p>
+
+      <p class="feature-mobile-copy">
+        Taş, su ve sessizlik; günü yavaşlatan daha dingin bir ritim kurar.
+      </p>
+
+      <div class="feature-image">
+        <img
+          class="lazy-img"
+          data-src="./assets/images/wellness/spa-pool.png"
+          alt="Salmakis Spa ve Wellness"
+          decoding="async"
+        >
+      </div>
+
+      <a href="#rezervasyon" class="feature-link">Spa’yı Keşfedin</a>
+    </article>
+
+    <article id="gastronomi" class="feature-card" data-reveal="up" data-delay="100">
+      <div class="feature-icon">
+        <span>✦</span>
+      </div>
+
+      <p class="feature-kicker">Gastronomi</p>
+
+      <h3>Günün ritmine eşlik eden tatlar.</h3>
+
+      <p class="feature-desktop-copy">
+        Sabah açık büfeden, akşam deniz manzarasına uzanan gastronomi deneyimi;
+        Salmakis’te günün her anını farklı bir atmosfer tamamlar.
+      </p>
+
+      <p class="feature-mobile-copy">
+        Sabah açık büfeden akşam manzarasına uzanan lezzetler, günün farklı anlarına eşlik eder.
+      </p>
+
+      <div class="feature-image">
+        <img
+          class="lazy-img"
+          data-src="./assets/images/gastronomy/gastronomy-sunset-table.png"
+          alt="Salmakis gastronomi deneyimi"
+          decoding="async"
+        >
+      </div>
+
+      <a href="#rezervasyon" class="feature-link">Lezzetleri Keşfedin</a>
+    </article>
+
+    <article id="aktiviteler" class="feature-card" data-reveal="up" data-delay="200">
+      <div class="feature-icon">
+        <span>✦</span>
+      </div>
+
+      <p class="feature-kicker">Aktiviteler</p>
+
+      <h3>Gün boyu yaşayan resort ritmi.</h3>
+
+      <p class="feature-desktop-copy">
+        Çocuklar, spor aktiviteleri ve animasyon seçenekleriyle Salmakis’te tatil;
+        aileler için güvenli, canlı ve eğlenceli bir deneyime dönüşür.
+      </p>
+
+      <p class="feature-mobile-copy">
+        Çocuklar, havuz, spor ve animasyonla tatil; günün farklı saatlerine yayılan canlı bir deneyime dönüşür.
+      </p>
+
+      <div class="feature-image">
+        <img
+          class="lazy-img"
+          data-src="./assets/images/experience/kids-pool.png"
+          alt="Salmakis aktiviteler ve çocuk havuzu"
+          decoding="async"
+        >
+      </div>
+
+      <a href="#rezervasyon" class="feature-link">Aktiviteleri Keşfedin</a>
+    </article>
+
+    <article id="organizasyon" class="feature-card" data-reveal="up" data-delay="300">
+      <div class="feature-icon">
+        <span>✦</span>
+      </div>
+
+      <p class="feature-kicker">Organizasyon</p>
+
+      <h3>Bodrum manzarasında özel anlar.</h3>
+
+      <p class="feature-desktop-copy">
+        Toplantılardan düğünlere, Salmakis’in denize ve resort ölçeğine kurduğu
+        atmosfer; özel günleri ve profesyonel buluşmaları daha güçlü kılar.
+      </p>
+
+      <p class="feature-mobile-copy">
+        Düğünlerden toplantılara, Salmakis’in denizle kurduğu atmosfer buluşmalara güçlü bir sahne açar.
+      </p>
+
+      <div class="feature-image">
+        <img
+          class="lazy-img"
+          data-src="./assets/images/gastronomy/gastronomy-event-dinner.png"
+          alt="Salmakis organizasyon alanı"
+          decoding="async"
+        >
+      </div>
+
+      <a href="#rezervasyon" class="feature-link">Organizasyonları Keşfedin</a>
+    </article>
+
+  </div>
+</section>
+
+  <section id="galeri" class="gallery-section">
+    <div class="container">
+
+      <div class="gallery-header" data-reveal-group>
+        <div>
+          <p class="section-kicker">Salmakis’ten Anlar</p>
+
+          <h2>
+            Denizden odalara, gastronomiden gün batımına;<br>
+            Salmakis’in farklı yüzlerini keşfedin.
+          </h2>
+        </div>
+
+        <a href="#rezervasyon" class="text-link gallery-all-link">Tüm Galeriyi Görüntüle</a>
+      </div>
+
+      <div class="gallery-strip">
+        <div class="gallery-item large" data-reveal="up">
+          <img
+            class="lazy-img"
+            data-src="./assets/images/gallery/gallery-aerial-day.png"
+            alt="Salmakis deniz ve resort görünümü"
+            decoding="async"
+          >
+        </div>
+
+        <div class="gallery-item" data-reveal="up" data-delay="100">
+          <img
+            class="lazy-img"
+            data-src="./assets/images/gallery/gallery-sea-deck.png"
+            alt="Salmakis deniz iskelesi"
+            decoding="async"
+          >
+        </div>
+
+        <div class="gallery-item" data-reveal="up" data-delay="200">
+          <img
+            class="lazy-img"
+            data-src="./assets/images/gallery/gallery-sunset-sea.png"
+            alt="Salmakis gün batımı"
+            decoding="async"
+          >
+        </div>
+
+        <div class="gallery-item" data-reveal="up" data-delay="300">
+          <img
+            class="lazy-img"
+            data-src="./assets/images/gallery/gallery-pool-palms.png"
+            alt="Salmakis havuz ve palmiye atmosferi"
+            decoding="async"
+          >
+        </div>
+
+        <div class="gallery-item" data-reveal="up" data-delay="400">
+          <img
+            class="lazy-img"
+            data-src="./assets/images/gallery/gallery-dans.png"
+            alt="Salmakis deniz manzaralı gastronomi"
+            decoding="async"
+          >
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="reviews-section">
+  <div class="container reviews-grid">
+
+    <div class="reviews-score" data-reveal="up">
+      <p class="section-kicker">Misafir deneyimiyle güçlenen bir Bodrum resortu</p>
+
+      <div class="score-row">
+        <span class="score-number">4.2</span>
+        <span class="stars">★★★★★</span>
+      </div>
+
+      <p class="review-count">+2.500 değerlendirme</p>
+    </div>
+
+    <div class="review-quote" data-reveal="up" data-delay="120">
+      <p>
+        “Konumu, denizi, yemekleri ve çalışanların ilgisiyle harika bir tatil geçirdik.
+        Salmakis’e mutlaka tekrar geleceğiz.”
+      </p>
+
+      <span>— Misafir Yorumu</span>
+    </div>
+
+    <a href="#rezervasyon" class="google-review-card" data-reveal="up" data-delay="220">
+      <div class="google-mark">
+        <img src="assets/images/icons/google-g.svg" alt="Google" width="24" height="24">
+      </div>
+
+      <div>
+        <strong>Tüm değerlendirmeleri</strong>
+        <span>Google’da görüntüleyin.</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+  <section id="rezervasyon" class="cta-section">
+    <div
+      class="cta-bg"
+      data-bg="./assets/images/experience/sea-view-panorama.png"
+    ></div>
+
+    <div class="cta-overlay"></div>
+
+    <div class="cta-content" data-reveal-group>
+      <h2>Bodrum’da konaklamayı değil,<br>hissi seçin.</h2>
+
+      <p>
+          Denizin, ışığın, sakinliğin ve günün farklı anlarına yayılan 
+          resort ritminin bir araya geldiği Salmakis deneyimini keşfedin.
+      </p>
+
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary">Rezervasyon Yap</a>
+        <a href="#iletisim" class="btn btn-secondary">İletişime Geç</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  <footer id="iletisim" class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <span>SALMAKİS</span>
+          <small>RESORT & SPA · BODRUM</small>
+        </a>
+
+        <p>© 2026 Salmakis Resort & Spa. Tüm hakları saklıdır.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Keşfet</h4>
+        <a href="#">Ana Sayfa</a>
+        <a href="#konaklama">Konaklama</a>
+        <a href="#spa">Spa & Wellness</a>
+        <a href="#gastronomi">Gastronomi</a>
+        <a href="#aktiviteler">Aktiviteler</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bilgi</h4>
+        <a href="#">Hakkımızda</a>
+        <a href="#">Sürdürülebilirlik</a>
+        <a href="#">Kariyer</a>
+        <a href="#">Basın</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <p>Bardakçı Koyu, 48400<br>Bodrum / Muğla, Türkiye</p>
+        <p>+90 252 316 60 00</p>
+        <p>info@salmakis.com.tr</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Sosyal Medya</h4>
+
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">F</a>
+          <a href="#" aria-label="Instagram">I</a>
+          <a href="#" aria-label="YouTube">Y</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <a href="#">Gizlilik Politikası</a>
+      <a href="#">Kullanım Şartları</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
